@@ -19,14 +19,23 @@ description: >- # this means to ignore newlines until "baseurl:"
   The Leaf Programming Language
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+paginate:     1
+locale:       "en"
 twitter_username: leaf_lang
 github_username:  leaf-lang
 
+# About/contact
+author:
+  name: Peter Entwistle
+  url:  https://peterentwistle.co.uk 
+
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
+# Gems
+gems:
+  - jekyll-paginate
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
